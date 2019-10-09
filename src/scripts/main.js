@@ -24,5 +24,29 @@ const Pat = {
     eyeColor: 'light blue',
     origin: 'maker'
 }
+const JohnSr = {
+    hair: 'brown',
+    eyeColor: 'hazel',
+    origin: 'maker'
+}
 
-const family = [Jack, JohnJr, Pat];
+const familyMembers = [Jack, JohnJr, Pat, JohnSr];
+
+
+const wardrobe = {
+    height: 80,
+    manufacturer: "Killibrew & Sons",
+    contents: ["Dress shirt", "Jeans", "Suit", "Skirt", "Tennis shoes"],
+    depth: 38,
+    width: 50
+}
+
+console.log(`The wardrobe is ${wardrobe.height} inches tall and has a depth of ${wardrobe.depth} inches and a width of ${wardrobe.width} inches. It is made by ${wardrobe.manufacturer}. It is currently filled by ${wardrobe.contents}.`)
+
+console.log('the wardrobe')
+console.log('the wardrobe height', wardrobe.height)
+console.log('the wardrobe manufacturer', wardrobe.manufacturer)
+
+console.log('the wardrobe depth', wardrobe.depth)
+console.log('the wardrobe height', wardrobe.height)
+console.log('the wardrobe content', wardrobe.contents[0], wardrobe.contents[1], wardrobe.contents[2], wardrobe.contents[3], wardrobe.contents[4])
