@@ -116,6 +116,15 @@ for(let i = 0; i < partTimeInstructors.length; i++){
 for(let i = 0; i < fullTimeInstructors.length; i++){
     console.log(fullTimeInstructors[i])
 }
+//using functions
+
+function loopthroughInstructors(arrayOfInstructors){
+    for(let i = 0; i < arrayOfInstructors.length; i++){
+        console.log(arrayOfInstructors[i])
+    }
+}
+loopthroughInstructors(partTimeInstructors)
+loopthroughInstructors(fullTimeInstructors)
 
 //for in loop
 
