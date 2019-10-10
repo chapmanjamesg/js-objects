@@ -69,10 +69,71 @@ The Empire State Building is ${empireStateBuilding.stories} stories tall which i
 The North South length is ${empireStateBuilding.northSouthLength}, and the East West Length is ${empireStateBuilding.eastWestLength}.
 In total it equates out to be ${empireStateBuilding.squareFeet} square feet.
 `)
-//part two
+//part two, didn't read the question fully...dumb ass...
 console.log(`
 The Empire State Building's address is ${empireStateBuilding["address"]}.
 It was constructed in the year ${empireStateBuilding['constructionDate']}.
 It cost $${empireStateBuilding['cost']}, the architects were ${empireStateBuilding['architect']}.
 It is currently owned by ${empireStateBuilding['owner']}.
 `)
+//part two 
+const addressKey = "address"
+const constructionKey = 'constructionDate'
+const ownerKey = "owner"
+const costKey = 'cost'
+const architectKey = "architect"
+
+console.log(`The empire State building is at ${empireStateBuilding[addressKey]}.
+it was built in ${empireStateBuilding[constructionKey]}. It cost $${empireStateBuilding[costKey]} it was built by 
+${empireStateBuilding[architectKey]}. It is owned by ${empireStateBuilding[ownerKey]}.`)
+
+//lightning exercise four
+
+const nashvilleSoftwareSchool = {
+    founded: 2012,
+    director: "John Wark",
+    instructors: {
+        fullTime: ["Jisie", "Brenda", "Steve", "Joe", "Andy"],
+        partTime: ["Zoe", "Nathan"]
+    },
+    address: "500 Interstate Blvd. S"
+}
+
+//part 1
+
+console.log('part time instructors', nashvilleSoftwareSchool.instructors.partTime,
+'full time instructors', nashvilleSoftwareSchool.instructors.fullTime
+)
+
+//using variables
+const fullTimeInstructors = nashvilleSoftwareSchool.instructors.fullTime
+const partTimeInstructors = nashvilleSoftwareSchool.instructors.partTime
+
+for(let i = 0; i < partTimeInstructors.length; i++){
+    console.log(partTimeInstructors[i])
+}
+
+for(let i = 0; i < fullTimeInstructors.length; i++){
+    console.log(fullTimeInstructors[i])
+}
+
+//for in loop
+
+const instructorsObj = nashvilleSoftwareSchool.instructors
+
+for(let key in instructorsObj){
+   // console.log(instructorsObj['key'])
+   const instructorsArray = instructorsObj[key]
+   for(let i = 0; i < fullTimeInstructors.length; i++){
+    console.log(fullTimeInstructors[i])
+}
+}
+
+//part 2
+
+console.log(nashvilleSoftwareSchool.instructors.partTime[0], nashvilleSoftwareSchool.instructors.fullTime[4])
+
+//instructors example
+
+console.log('Andy: ', fullTimeInstructors[fullTimeInstructors.length -1])
+console.log('Zoe: ', partTimeInstructors[0])
